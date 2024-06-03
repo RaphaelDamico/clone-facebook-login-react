@@ -1,0 +1,62 @@
+.footerContainer {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    height: 157.3px;
+    padding: 20px 0 0;
+}
+
+.footerContet {
+    width: 980px;
+    height: 137.3px;
+    margin: 0 184.5px;
+}
+
+.uiList{
+    width: 980px;
+    height: 28px;
+    padding: 8px 0 0;
+    list-style: none;
+    display: flex;
+}
+
+li{
+    padding: 0 0 0 10px;
+    width: auto;
+    height: 16.08px;
+    color: #737373;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.linkLocale {
+    display: flex;
+    width: 100%;
+    height: 14px;
+    color: #8a8d91;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.plusBtn {
+    background-color: #F5F6F7;
+    width: 30px;
+    height: 20px;
+    border: 1px solid #CCD0D5;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faPlus{
+    width: 12px;
+    height: 12px;
+    color: #626978;
+}
+
+
+
