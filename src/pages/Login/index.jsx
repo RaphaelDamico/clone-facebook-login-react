@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import facebookLogo from "../../assets/facebook.svg";
 import styles from "./styles.module.css";
-//import Footer from "../../components/Footer"
+import Footer from "../../components/Footer"
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -103,6 +103,7 @@ function Login() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
