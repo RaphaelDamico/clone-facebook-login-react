@@ -16,6 +16,8 @@ function Login() {
         alert('Ops, email ou senha incorretos!');
         setUsuarioLogado(false);
     }
+    console.log(email);
+    console.log(password);
   }, [usuarioLogado, email, password]);
 
   const handleEntrar = () => {
