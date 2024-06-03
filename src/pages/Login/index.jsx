@@ -10,17 +10,19 @@ function Login() {
 
   useEffect(() => {
     if(usuarioLogado) {
-      if(email === 'mark@facebook.com' && password === '12345')
+      if(email === 'mark@facebook.com' && password === '12345') {
         alert('Seja bem vindo ao Facebook!');
+        console.log(email);
+        console.log(password);
+      }
       else
         alert('Ops, email ou senha incorretos!');
         setUsuarioLogado(false);
     }
-    console.log(email);
-    console.log(password);
   }, [usuarioLogado, email, password]);
 
-  const handleEntrar = () => {
+  const handleEntrar = (e) => {
+    e.preventDefault();
     setUsuarioLogado(true);
   }
 
@@ -52,7 +54,8 @@ function Login() {
                       className={styles.emailInput}
                       type="text"
                       name="Email"
-                      id="email"
+                      value={email}
+                      autoComplete="username"
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Email ou telefone"
                     />
@@ -62,7 +65,8 @@ function Login() {
                       className={styles.passwordInput}
                       type="password"
                       name="Senha"
-                      id="password"
+                      value={password}
+                      autoComplete="new-password"
                       onChange={(e) => setPassword(e.target.value)}
                       placeholder="Senha"
                     />

@@ -1,7 +1,10 @@
+import React from 'react';
 import ReactDOM from 'react-dom/client'
 import Login from './src/pages/Login'
 import '/index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <Login />
+    <React.StrictMode>
+        <Login />
+    </React.StrictMode>
 )
