@@ -10,7 +10,7 @@ function Login() {
 
   useEffect(() => {
     if(usuarioLogado) {
-      if(email === 'usuario@email.com' && password === '12345')
+      if(email === 'mark@facebook.com' && password === '12345')
         alert('Seja bem vindo ao Facebook!');
       else
         alert('Ops, email ou senha incorretos!');
